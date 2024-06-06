@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="index.css">
+
+    
+</head>
+<body>
+    <div class="container">
+        <div class="Box" id="top">
+           <h4> USE OF HTML,JS, CSS</h4>
+
+        </div>
+        <div class="Box" id="left">
+                <ul>
+                    <li><a href="#" onclick="showContent('module1')">Module1</a></li>
+                    <li><a href="#" onclick="showContent('module2')">Module2</a></li>
+                    <li><a href="#" onclick="showContent('module3')">Module3</a></li>
+                    <li><a href="#" onclick="showContent('module4')">Module4</a></li>
+                    <li><a href="#" onclick="showContent('module5')">Module5</a></li>
+                    <li><a href="#" onclick="showContent('module6')">Module6</a></li>
+                    <li><a href="#" onclick="showContent('module7')">Module7</a></li>
+                    <li><a href="#" onclick="showContent('module8')">Module8</a></li>
+                </ul>
+        </div>
+        <div class="module" id="right">
+                <div id="module1" class="module-item">
+                    <h2> <u>Heading For Module 1</u></h2>
+                    <p>This is module 1.</p>
+                </div>
+                <div id="module2" class="module-item">
+                    <h2><u>Heading For Module 2</u></h2>
+                    <p>This is module 2.</p>
+                </div>
+                <div id="module3" class="module-item">
+                    <h2> <u>Heading For Module 3</u></h2>
+                    <p>This is module 3.</p>
+                </div>
+                <div id="module4" class="module-item">
+                    <h2><u>Heading For Module 4</u></h2>
+                    <p>This is module 4.</p>
+                </div>
+                <div id="module5" class="module-item">
+                    <h2><u>Heading For Module 5</u></h2>
+                    <p>This is module 5.</p>
+                </div>
+                <div id="module6" class="module-item">
+                    <h2><u>Heading For Module 6</u></h2>
+                    <p>This is module 6.</p>
+                </div>
+                <div id="module7" class="module-item">
+                    <h2><u>Heading For Module 7</u></h2>
+                    <p>This is module 7.</p>
+                </div>
+                <div id="module8" class="module-item">
+                    <h2><u>Heading For Module 8</u></h2>
+                    <p>This is module 8.</p>
+                </div>
+
+        </div>
+
+        <footer class="Box">
+            website designed by Rahul Paul 
+        </footer>
+
+    </div>
+    <script>
+           function showContent(moduleID) {
+        var contentItems= document.querySelectorAll('.module-item');
+        contentItems.forEach(function(item){
+            item.style.display = 'none';
+        });
+
+        var contentToShow = document.getElementById(moduleID);
+        contentToShow.style.display = 'block';
+    }
+    </script>
+</body>
+</html>

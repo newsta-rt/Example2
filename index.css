@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+border: 2px solid black;
+width: 90%;
+margin: auto;
+}
+.Box{
+    border: 2px solid black;
+    margin: 2px; 
+}
+#top{
+    
+    text-align: center;
+}
+#left{
+    
+    float: left;
+    /* border: 2px solid black; */
+    /* padding-right: 12px; */
+    /* padding: 12px; */
+    width: 18%;
+    background-color: #504d4d;
+    color: white;
+}
+#right{
+    
+    /* display: inline; */
+    float: right;
+    padding: 12px;
+    width: 76%;  
+}
+footer{
+    clear: both;
+    /* width: 80%; */
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#left a:hover{
+    text-decoration: underline;
+    color: yellow;
+}
+.module-item{
+    display: none;
+}
